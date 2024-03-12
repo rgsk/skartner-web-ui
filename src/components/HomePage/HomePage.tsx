@@ -1,3 +1,5 @@
+import TargetBlankLink from "../Shared/TargetBlankLink/TargetBlankLink";
+
 /* eslint-disable @next/next/no-img-element */
 interface HomePageProps {}
 const HomePage: React.FC<HomePageProps> = ({}) => {
@@ -34,7 +36,9 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
             vocabulary, Vocab-Partner is your perfect vocabulary companion.
           </p>
           <div className="h-[20px]"></div>
-          <Button>Try Now</Button>
+          <TargetBlankLink href="http://app.skartner.com">
+            <Button>Try Now</Button>
+          </TargetBlankLink>
         </div>
       </div>
       <div className="h-[20px]"></div>
