@@ -36,7 +36,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
             vocabulary, Vocab-Partner is your perfect vocabulary companion.
           </p>
           <div className="h-[20px]"></div>
-          <TargetBlankLink href="https://app.skartner.com">
+          <TargetBlankLink href="https://www.skartner.com">
             <Button>Try Now</Button>
           </TargetBlankLink>
         </div>
