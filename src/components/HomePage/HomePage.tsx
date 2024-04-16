@@ -41,7 +41,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           </TargetBlankLink>
         </div>
       </div>
-      <div className="h-[20px]"></div>
+      <div className="h-[60px]"></div>
     </div>
   );
 };
