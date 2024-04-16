@@ -4,7 +4,7 @@ import TargetBlankLink from "../Shared/TargetBlankLink/TargetBlankLink";
 interface HomePageProps {}
 const HomePage: React.FC<HomePageProps> = ({}) => {
   return (
-    <div className="max-w-[1296px] px-4 m-auto">
+    <div className="">
       <div className="h-[20px]"></div>
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-4">

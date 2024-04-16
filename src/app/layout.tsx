@@ -1,3 +1,6 @@
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,7 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={clsx(
+          inter.className,
+          "min-h-screen flex flex-col max-w-[1296px] px-4 mx-auto"
+        )}
+      >
+        <Navbar />
+
+        {children}
+        <div className="flex-1"></div>
+        <Footer />
+      </body>
     </html>
   );
 }
