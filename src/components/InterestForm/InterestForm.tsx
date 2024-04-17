@@ -36,7 +36,10 @@ const InterestForm: React.FC<InterestFormProps> = ({}) => {
           placeholder="Email"
           name="email"
           value={emailInput}
-          onChange={(e) => setEmailInput(e.target.value)}
+          onChange={(e) => {
+            setMessage("");
+            setEmailInput(e.target.value);
+          }}
         />
         {message && <p>{message}</p>}
         <Button onClick={onSubmit} disabled={!emailInput}>
