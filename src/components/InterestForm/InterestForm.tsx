@@ -33,7 +33,7 @@ const InterestForm: React.FC<InterestFormProps> = ({}) => {
         <input
           className="border border-gray-400 rounded-lg p-2 w-full text-[20px] max-w-[400px]"
           type="text"
-          placeholder="email"
+          placeholder="Email"
           name="email"
           value={emailInput}
           onChange={(e) => setEmailInput(e.target.value)}
