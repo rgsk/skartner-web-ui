@@ -51,6 +51,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           <p>Your browser does not support the video tag.</p>
         </video>
       </div>
+      <div className="h-[100px]"></div>
       <InterestForm />
       <div className="h-[60px]"></div>
     </div>
@@ -60,10 +61,20 @@ export default HomePage;
 
 interface ButtonProps {
   children: any;
+  onClick?: () => void;
+  disabled?: boolean;
 }
-const Button: React.FC<ButtonProps> = ({ children }) => {
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  onClick,
+  disabled,
+}) => {
   return (
-    <button className="bg-[#025F9C] text-white font-medium text-[20px] w-[150px] py-2 rounded-lg">
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className="bg-[#025F9C] text-white font-medium text-[20px] w-[150px] py-2 rounded-lg disabled:opacity-90 disabled:cursor-not-allowed"
+    >
       {children}
     </button>
   );
