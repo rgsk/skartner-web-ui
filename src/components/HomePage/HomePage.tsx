@@ -41,6 +41,15 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           </TargetBlankLink>
         </div>
       </div>
+      <div className="flex justify-center my-4">
+        <h2 className="text-2xl">Demo Video</h2>
+      </div>
+      <div className="flex justify-center">
+        <video controls className="max-h-[60vh] object-contain">
+          <source src="/demo1.webm" type="video/webm" />
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
       <div className="h-[60px]"></div>
     </div>
   );
