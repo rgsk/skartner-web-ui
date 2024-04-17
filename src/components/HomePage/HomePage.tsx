@@ -42,8 +42,9 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           </TargetBlankLink>
         </div>
       </div>
-      <div className="flex justify-center my-4">
-        <h2 className="text-2xl">Demo Video</h2>
+      <div className="h-[50px]"></div>
+      <div className="flex justify-center mb-[30px]">
+        <h2 className="text-3xl">Demo Video</h2>
       </div>
       <div className="flex justify-center">
         <video controls className="max-h-[60vh] object-contain">
@@ -51,7 +52,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           <p>Your browser does not support the video tag.</p>
         </video>
       </div>
-      <div className="h-[100px]"></div>
+      <div className="h-[50px]"></div>
       <InterestForm />
       <div className="h-[60px]"></div>
     </div>
