@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(inter.className)}>
-        <div className="min-h-screen">
+        <div className="min-h-[93vh]">
           <Container>
             <Navbar />
             {children}

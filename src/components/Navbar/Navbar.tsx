@@ -1,20 +1,11 @@
-"use client";
-
-import useResizeObserver from "@/lib/hooks/useResizeObserver";
 import Link from "next/link";
-import { useRef } from "react";
 
 /* eslint-disable @next/next/no-img-element */
 interface NavbarProps {}
 const Navbar: React.FC<NavbarProps> = ({}) => {
-  const navRef = useRef<HTMLElement>(null);
-  const navRect = useResizeObserver(navRef);
   return (
     <div>
-      <nav
-        ref={navRef}
-        className="fixed top-0 w-screen flex py-[20px] bg-white"
-      >
+      <nav className="fixed top-0 w-screen flex py-[20px] bg-white">
         <Link href="/">
           <div className="flex flex-col items-center">
             <div className="flex items-center gap-4">
@@ -28,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           </div>
         </Link>
       </nav>
-      <div style={{ height: navRect?.height }}></div>
+      <div className="h-[85px]"></div>
     </div>
   );
 };
