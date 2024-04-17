@@ -1,6 +1,4 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
-import Container from "@/components/Shared/Container/Container";
+import App from "@/components/App";
 import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,13 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(inter.className)}>
-        <div className="min-h-[calc(100vh-76px)] md:min-h-[calc(100vh-88px)]">
-          <Container>
-            <Navbar />
-            {children}
-          </Container>
-        </div>
-        <Footer />
+        <App>{children}</App>
       </body>
     </html>
   );

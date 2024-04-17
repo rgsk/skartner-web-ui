@@ -1,3 +1,4 @@
+import InterestForm from "../InterestForm/InterestForm";
 import TargetBlankLink from "../Shared/TargetBlankLink/TargetBlankLink";
 
 /* eslint-disable @next/next/no-img-element */
@@ -50,6 +51,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           <p>Your browser does not support the video tag.</p>
         </video>
       </div>
+      <InterestForm />
       <div className="h-[60px]"></div>
     </div>
   );
