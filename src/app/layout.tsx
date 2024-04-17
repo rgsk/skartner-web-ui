@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(inter.className)}>
-        <div className="min-h-[93vh]">
+        <div className="min-h-[calc(100vh-76px)] md:min-h-[calc(100vh-88px)]">
           <Container>
             <Navbar />
             {children}
