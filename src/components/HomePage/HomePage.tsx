@@ -48,7 +48,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
       </div>
       <div className="flex justify-center">
         <video controls className="max-h-[60vh] object-contain">
-          <source src="/demo1.webm" type="video/webm" />
+          <source src="/demo1.mp4" type="video/mp4" />
           <p>Your browser does not support the video tag.</p>
         </video>
       </div>
